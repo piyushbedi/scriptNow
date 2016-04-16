@@ -5,27 +5,27 @@ package com.scriptnow;
  */
 public class Order {
 
-    private Prescription prescription;
-    private User username;
+    Long id;
+    private String prescription;
 
-    public Order(Prescription prescription, User username) {
+    public Order(Long id, String prescription) {
+        this.id = id;
         this.prescription = prescription;
-        this.username = username;
     }
 
-    public Prescription getPrescription() {
+    public String getPrescription() {
         return prescription;
     }
 
-    public void setPrescription(Prescription prescription) {
+    public void setPrescription(String prescription) {
         this.prescription = prescription;
     }
 
-    public User getUsername() {
-        return username;
+    public Long getId() {
+        return id;
     }
 
-    public void setUsername(User username) {
-        this.username = username;
+    public void setId(Long id) {
+        this.id = id;
     }
 }
