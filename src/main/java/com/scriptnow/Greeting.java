@@ -1,4 +1,4 @@
-package com.scriptnow.model;
+package com.scriptnow;
 
 public class Greeting {
 
